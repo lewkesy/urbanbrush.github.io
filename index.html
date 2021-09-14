@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- DELETE THIS SCRIPT if you use this HTML, otherwise my analytics will track your page -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-7580334-2');
+  </script>
+
+  <title>Xiaochen Zhou</title>
+  
+  <meta name="author" content="Xiaochen Zhou">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Xiaochen Zhou</name>
+              </p>
+              <p>I am a PhD student at Purdue University, where I major in computer graphics, computer vision, image processing and machine learning. I am a research assistant in <a href="https://vlg.seas.wustl.edu/">HPCG Lab</a>, advised by <a href="https://cse.wustl.edu/faculty/Pages/faculty.aspx?bio=117">Bedrich Benes</a>.
+              </p>
+              <p>
+                I graduated from Washington University in st. Louis with a Master degree and I defensed my bachelor degree at Beihang University. I achieved an amazing internship experience in <a href="https://www.faceplusplus.com/">Megvii Face++</a>, working on vehicle re-identification. 
+               </p>
+              
+              <p style="text-align:center">
+                <a href="mailto:zhou1178@purdue.edu">Email</a> &nbsp/&nbsp
+                <a href="data/resume.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/research_interests.pdf"> Research Interests </a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/xiaochen-zhou-26b79b178/"> LinkedIn </a> &nbsp/&nbsp
+                <a href="https://github.com/lewkesy"> Github </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/protrait.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/protrait_circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in computer vision, machine learning, optimization, and image processing. More specifially, I'm interested in 3D reconstruction and image texuture synthesis.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="thesis_stop()" onmouseover="thesis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='thesis_image'><img src='images/thesisIn.png' height="180" width="180"></div>
+                <img src='images/thesisOut.png' height="180" width="180">
+              </div>
+              <script type="text/javascript">
+                function thesis_start() {
+                  document.getElementById('thesis_image').style.opacity = "1";
+                }
+
+                function thesis_stop() {
+                  document.getElementById('thesis_image').style.opacity = "0";
+                }
+                unet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/thesis.pdf">
+                <papertitle>Image Extension with Patch Matching and GAN</papertitle>
+              </a>
+              <br>
+              Master defense project, 2020
+              <p></p>
+              <p>This project is the master defense project. We firstly extract the layout of the source image with additional information. Second, the layout image is extended via optimized patch matching algorithms. Then we implemented coarse-to-fine progressive Unet GAN to reconstruct the completed image through layouts.</p>
+              <a href="data/thesis.pdf"> Thesis </a>
+            </td>
+          </tr>
+
+          <tr onmouseout="unet_stop()" onmouseover="unet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='unet_image'><img src='images/unetIn.png'></div>
+                <img src='images/unetOut.png'>
+              </div>
+              <script type="text/javascript">
+                function unet_start() {
+                  document.getElementById('unet_image').style.opacity = "1";
+                }
+
+                function unet_stop() {
+                  document.getElementById('unet_image').style.opacity = "0";
+                }
+                unet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/lewkesy/contour2img">
+                <papertitle>Contour-to-Image Reconstruction through Neural Network</papertitle>
+              </a>
+              <br>
+              Implementation practice of paper <em>Smart, Sparse Contours to Represent and Edit Images</em>, 2018
+              <p></p>
+              <p>In this project, a generative adversial network is trained to generate and edit image through contour domain, where canny edge detection is used to extract contour information through original input.</p>
+              <a href="https://github.com/lewkesy/contour2img"> Github </a>
+            </td>
+          </tr>
+
+          <tr onmouseout="canny_stop()" onmouseover="canny_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='canny'><img src='images/edge.jpg'></div>
+                <img src='images/canny.jpg'>
+              </div>
+              <script type="text/javascript">
+                function canny_start() {
+                  document.getElementById('canny').style.opacity = "1";
+                }
+
+                function canny_stop() {
+                  document.getElementById('canny').style.opacity = "0";
+                }
+                dpzlearn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/lewkesy/canny_edge_detector">
+                <papertitle>Canny Edge Detector</papertitle>
+              </a>
+              <br>
+              <em>Algorithms Implementation</em>, 2019
+              <p></p>
+              <p>Implemented the traditional algorithm with Python and Scipy. This algorithm will be used in edge detector task, and will be implemented in tensorflow version for contour2img task.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='porlight_image'><img src='images/result.jpg'></div>
+                <img src='images/background.jpg'>
+              </div>
+              <script type="text/javascript">
+                function porlight_start() {
+                  document.getElementById('porlight_image').style.opacity = "1";
+                }
+
+                function porlight_stop() {
+                  document.getElementById('porlight_image').style.opacity = "0";
+                }
+                porlight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/Partial Style Transfer Network.pdf">
+                <papertitle>Partial Harmonization Network</papertitle>
+              </a>
+              <br>
+              Implementation practice of paper <em>Deep Painterly Harmonization</em>, 2019
+              <p></p>
+              <p>Training a neural network on style transferring and optimizing the coarse general output. This network allows you to copy and paste some part of image element from other image to your target image and smooth the artifacts</p>
+
+              <a href="https://github.com/lewkesy/Partial-Harmonization-Network"> Github </a>
+            </td>
+          </tr>
+
+          <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dpzlearn_image'><img src='images/artificial.png'></div>
+                <img src='images/normal.png'>
+              </div>
+              <script type="text/javascript">
+                function dpzlearn_start() {
+                  document.getElementById('dpzlearn_image').style.opacity = "1";
+                }
+
+                function dpzlearn_stop() {
+                  document.getElementById('dpzlearn_image').style.opacity = "0";
+                }
+                dpzlearn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/3D Reconstruction with Single View.pdf">
+                <papertitle>Single-view 3D Model Reconstruction</papertitle>
+              </a>
+              <br>
+              <em>Course Project in Computer Vision</em>, 2018
+              <p></p>
+              <p>Computing camera calibration parameters with vanishing points and reconstructing the object through search algorithm. This project is my first step to single view 3D reconstruction. Now I am playing with PointNet and point cloud SIFT algorithm.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="loss_stop()" onmouseover="loss_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='loss_image'><img src='images/structure.png'></div>
+                <img src='images/structure1.png'>
+              </div>
+              <script type="text/javascript">
+                function loss_start() {
+                  document.getElementById('loss_image').style.opacity = "1";
+                }
+
+                function loss_stop() {
+                  document.getElementById('loss_image').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/1808.03823">
+                <papertitle>Learning Discriminative 3D Shape Representations by View Discerning Networks</papertitle>
+              </a>
+              <br>Biao Leng, Cheng Zhang, <strong>Xiaochen Zhou</strong>, Cheng Xu, Kai Xu
+              <br>
+              <em>TVCG</em>, 2018 &nbsp
+              <br>
+              <p></p>
+              <p>Two score units are devised to evaluate the quality of each projected image with score vectors.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mpi_image'><img src='images/graphic.png'></div>
+                <img src='images/graphic.png'>
+              </div>
+              <script type="text/javascript">
+                function mpi_start() {
+                  document.getElementById('mpi_image').style.opacity = "1";
+                }
+
+                function mpi_stop() {
+                  document.getElementById('mpi_image').style.opacity = "0";
+                }
+                mpi_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/8565889">
+                <papertitle>Improved Panoramic Representation via Bidirectional Recurrent View Aggregation for 3D Model Retrieval</papertitle>
+              </a>
+              <br>Cheng Xu, Cheng Zhang, <strong>Xiaochen Zhou</strong>, Biao Leng
+			  <br>
+			  <em>IEEE Computer Graphic and Application</em>, 2018 &nbsp
+			  <br>
+              <p></p>
+              <p>A novel deep neural network, recurrent panorama network (RePanoNet), is designed to extract features in a panoramic view, encouraging the network to recognize the original 3D shape.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/aaai.png'></div>
+                <img src='images/aaai.png'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/16883">
+                <papertitle>Emphasizing 3D Properties in Recurrent Multi-View Aggregation for 3D Shape Retrieval</papertitle>
+              </a>
+              <br>
+				Cheng Xu, Biao Leng, Cheng Zhang, <strong>Xiaochen Zhou</strong>
+              <br>
+              <em>AAAI</em>, 2018 &nbsp
+              <br>
+              <p></p>
+              <p>We designed an encoder-decoder recurrent feature aggregation network (ERFA-Net) to emphasize the 3D properties of 3D shapes in multi-view features aggregation.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Service</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/logo.png"></td>
+            <td width="75%" valign="center">
+              <a href="https://www.cse.wustl.edu/~ayan/courses/cse559a/">TA on CSE559A: Computer Vision - Fall 2019 </a>
+              <br>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <a href="https://github.com/jonbarron/jonbarron_website">Great thank for the website template!</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
